@@ -6,15 +6,13 @@ public class Level : MonoBehaviour
 {
     [SerializeField] int breakableBlocks; // serialize for debugging
     SceneLoader sceneLoader; // cached ref
-    GameSession gameStatus;
+    GameSession gameSession;
     [Range(0.1f, 10f)] [SerializeField] float gameSpeed =1f;
-
-    
 
     // Start is called before the first frame update
     void Start()
     {
-        gameStatus = FindObjectOfType<GameSession>();
+        gameSession = FindObjectOfType<GameSession>();
         sceneLoader = FindObjectOfType<SceneLoader>();
     }
 
@@ -34,9 +32,9 @@ public class Level : MonoBehaviour
         breakableBlocks++;
     }
 
-    public void UpdateBlockCollision()
+    public void UpdateBlockCollision(int blockPoint)
     {
         breakableBlocks--;
-        gameStatus.UpdateBlockCollision();
+        gameSession.UpdateBlockCollision(blockPoint);
     }
 }

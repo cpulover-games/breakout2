@@ -6,7 +6,6 @@ using TMPro;
 public class GameSession : MonoBehaviour
 {
     [SerializeField] int score;
-    [SerializeField] int pointPerBlock = 5;
     [SerializeField] TextMeshProUGUI scoreText;
 
     private void Awake()
@@ -36,9 +35,9 @@ public class GameSession : MonoBehaviour
         
     }
 
-    public void UpdateBlockCollision()
+    public void UpdateBlockCollision(int blockPoint)
     {
-        score += pointPerBlock;
+        score += blockPoint;
         scoreText.text = score.ToString();
     }
 
