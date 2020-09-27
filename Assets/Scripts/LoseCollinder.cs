@@ -7,6 +7,7 @@ public class LoseCollinder : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        FindObjectOfType<GameSession>().ResetGame(); // to remove the score
         SceneManager.LoadScene("Game over");
     }
 }

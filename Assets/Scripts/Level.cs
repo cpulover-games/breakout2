@@ -6,7 +6,7 @@ public class Level : MonoBehaviour
 {
     [SerializeField] int breakableBlocks; // serialize for debugging
     SceneLoader sceneLoader; // cached ref
-    GameStatus gameStatus;
+    GameSession gameStatus;
     [Range(0.1f, 10f)] [SerializeField] float gameSpeed =1f;
 
     
@@ -14,7 +14,7 @@ public class Level : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameStatus = FindObjectOfType<GameStatus>();
+        gameStatus = FindObjectOfType<GameSession>();
         sceneLoader = FindObjectOfType<SceneLoader>();
     }
 
