@@ -252,7 +252,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -298,7 +297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 187213301225169498}
   - component: {fileID: 187213301225169499}
-  - component: {fileID: 187213301225169500}
+  - component: {fileID: 6653376131673460478}
   m_Layer: 0
   m_Name: Lose Collinder
   m_TagString: Untagged
@@ -346,7 +345,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16.82257, y: 1}
   m_EdgeRadius: 0
---- !u!114 &187213301225169500
+--- !u!114 &6653376131673460478
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -355,6 +354,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 187213301225169501}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3248da158c1c12a458ff856b878be160, type: 3}
+  m_Script: {fileID: 11500000, guid: ac2022c2b4ba7b94d8329db2b449a209, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
